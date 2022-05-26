@@ -1,14 +1,14 @@
 def FahToCel(fah):
-    c = (fah - 32) / 1.8
-    return c
+    celsius = (fah - 32) / 1.8
+    return celsius
 
 
 print(FahToCel(150))
 
 
 def Celsius_To_Fahrenheit(cel):
-    f = (1.8 * cel) + 32
-    return f
+    fahrenheit = (1.8 * cel) + 32
+    return fahrenheit
 
 
 print(Celsius_To_Fahrenheit(50))
