@@ -1,9 +1,6 @@
 def time_convertor(num):
     number = int(num)
 
-    HandlesPluralsForHours = "hour"
-    HandlesPluralsForMinutes = "minute"
-
     count_hours = 0
 
     while number >= 60:
@@ -12,12 +9,12 @@ def time_convertor(num):
 
     minutes = number
     if count_hours > 1:
-        Handles_Plurals_For_Hours = "hours"
+        handles_plurals_for_hours = "hours"
 
     if minutes > 1:
-        Handles_Plurals_For_Minutes = "minutes"
+        handles_plurals_for_minutes = "minutes"
 
-    time = f"{count_hours}{Handles_Plurals_For_Hours}, {minutes}{Handles_Plurals_For_Minutes}"
+    time = f"{count_hours} {handles_plurals_for_hours}, {minutes} {handles_plurals_for_minutes}"
     return time
 
 
