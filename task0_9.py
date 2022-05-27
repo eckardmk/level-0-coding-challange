@@ -1,12 +1,16 @@
-def vowels(word):
-    for letter in word.lower():
-        if letter in "aeiou":
-            print(letter)
+def vowel_check(string):
+    new_string = string.lower()
+    vowels = ["a", "e", "i", "o", "u"]
+    present_vowels = []
+    for item in new_string:
+        if item in vowels:
+            present_vowels.append(item)
+            non_duplicates = []
+            for i in present_vowels:
+                if i not in non_duplicates:
+                    non_duplicates.append(i)
+            join_present_vowels = ", ".join(non_duplicates)
+    print("vowels: ", join_present_vowels)
 
-    x = list()
-    for letter in word.lower():
-        if letter in "aeiou" and letter not in x:
-            x.append(letter)
 
-
-vowels("Umuzi")
+vowel_check("Umuzi")
