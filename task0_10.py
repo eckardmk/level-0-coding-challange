@@ -1,9 +1,13 @@
-def two_strings(string1, string2):
-    common = list()
-    for i in string1:
-        if i in string2 and i not in common:
-            common.append(i)
-    return common
+def common_letters(string1, string2):
+    string1_lower = string1.lower()
+    string2_lower = string2.lower()
+
+    common_letters_list = []
+    for item in string1_lower:
+        if item in string2_lower:
+            common_letters_list.append(item)
+            join_common_letters = ", ".join(common_letters_list)
+    print("common letters found: ", join_common_letters)
 
 
-print(two_strings("house", "computers"))
+common_letters("house", "computers")
