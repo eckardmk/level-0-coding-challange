@@ -6,7 +6,12 @@ def common_letters(string1, string2):
     for item in string1_lower:
         if item in string2_lower:
             common_letters_list.append(item)
-            join_common_letters = ", ".join(common_letters_list)
+            no_duplicates = []
+            for i in common_letters_list:
+                if i not in no_duplicates:
+                    no_duplicates.append(i)
+            join_common_letters = ", ".join(no_duplicates)
+
     print("common letters found: ", join_common_letters)
 
 
