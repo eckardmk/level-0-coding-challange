@@ -1,9 +1,9 @@
 def maximum(*args):
-    max_number = args[0]
-    for i in args:
-        if i > max_number:
-            max_number = i
-    return max_number
+    maximum_number = args[0]
+    for item in args:
+        if item > maximum_number:
+            maximum_number = item
+    return maximum_number
 
 
 print(maximum(10, 5, 31, 6))
