@@ -10,13 +10,15 @@ def time_convertor(num):
     minutes = number
     if count_hours > 1:
         handles_plurals_for_hours = "hours"
-
+    else:
+        handles_plurals_for_hours = "hour"
     if minutes > 1:
         handles_plurals_for_minutes = "minutes"
+    else:
+        handles_plurals_for_minutes = "minute"
 
     time = f"{count_hours} {handles_plurals_for_hours}, {minutes} {handles_plurals_for_minutes}"
     return time
 
 
 timed = time_convertor(133)
-print(timed)
