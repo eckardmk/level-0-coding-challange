@@ -1,9 +1,9 @@
-def Area_of_Triangle(side1, side2, side3):
+def area_of_triangle(side1, side2, side3):
 
-    s = (side1 + side2 + side3) / 2
-    Area = ((s * (s - side1) * (s - side2) * (s - side3)))**0.5
+    semiperimeter = (side1 + side2 + side3) / 2
+    area = ((semiperimeter * (semiperimeter - side1) * (semiperimeter - side2) * (s - side3)))**0.5
 
-    return Area
+    return area
 
 
-print(Area_of_Triangle(6, 7, 8))
+print(area_of_triangle(6, 7, 8))
