@@ -1,14 +1,14 @@
-def FahToCel(fah):
-    celsius = (fah - 32) / 1.8
+def fahrenheit_to_celsius(fahrenheit):
+    celsius = (fahrenheit - 32) / 1.8
     return celsius
 
 
-print(FahToCel(150))
+print(fahrenheit_to_celsius(100))
 
 
-def Celsius_To_Fahrenheit(cel):
-    fahrenheit = (1.8 * cel) + 32
+def Celsius_To_Fahrenheit(celsius):
+    fahrenheit = (1.8 * celsius) + 32
     return fahrenheit
 
 
-print(Celsius_To_Fahrenheit(50))
+print(Celsius_To_Fahrenheit(200))
