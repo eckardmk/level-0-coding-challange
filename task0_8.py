@@ -18,7 +18,7 @@ def time_convertor(num):
         handles_plurals_for_minutes = "minute"
 
     time = f"{count_hours} {handles_plurals_for_hours}, {minutes} {handles_plurals_for_minutes}"
-    return time
+    print (time)
 
 
 timed = time_convertor(133)
