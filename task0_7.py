@@ -6,9 +6,9 @@ def fahrenheit_to_celsius(fahrenheit):
 print(fahrenheit_to_celsius(100))
 
 
-def Celsius_To_Fahrenheit(celsius):
+def celsius_to_fahrenheit(celsius):
     fahrenheit = (1.8 * celsius) + 32
     return fahrenheit
 
 
-print(Celsius_To_Fahrenheit(200))
+print(celsius_to_fahrenheit(200))
