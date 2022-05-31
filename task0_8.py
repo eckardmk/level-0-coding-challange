@@ -8,7 +8,7 @@ def time_convertor(num):
         count_hours += 1
 
     minutes = number
-    if count_hours > 1:
+    if count_hours > 1 or count_hours == 0 :
         handles_plurals_for_hours = "hours"
     else:
         handles_plurals_for_hours = "hour"
