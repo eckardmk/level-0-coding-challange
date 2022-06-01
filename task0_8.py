@@ -12,7 +12,7 @@ def time_convertor(num):
         handles_plurals_for_hours = "hours"
     else:
         handles_plurals_for_hours = "hour"
-    if minutes > 1:
+    if minutes > 1 or minutes == 0:
         handles_plurals_for_minutes = "minutes"
     else:
         handles_plurals_for_minutes = "minute"
